@@ -9,12 +9,12 @@ sys.stdout = open('user_diag.csv','a')
 logged_in_users = ops.loggedin()
 
 
-#def diagnose():
-sys.stdout = open('user_diag.csv','a')
+def diagnose():
+    sys.stdout = open('user_diag.csv','a')
     #logged_in_users = ops.loggedin()
-logged_in_users = ops.loggedin()
-print(ops.loggedin())
-sys.stdout.close()
+    logged_in_users = ops.loggedin()
+    print(ops.loggedin())
+    sys.stdout.close()
 
     #.close()
     #eturn
