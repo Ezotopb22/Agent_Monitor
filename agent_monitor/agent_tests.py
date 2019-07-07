@@ -16,8 +16,7 @@ def diagnose():
     print(ops.loggedin())
     sys.stdout.close()
 diagnose()
-    #.close()
-    #eturn
+    #.close()    #eturn
 
 #while True:
 #    diag()
