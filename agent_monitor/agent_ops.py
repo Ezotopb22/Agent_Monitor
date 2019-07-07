@@ -7,18 +7,18 @@ import sys
 
 
 def loggedin():
-    """
-    the function will return a list of logged in users, e.g: ["momo", "yoyo", "koko"] (unique)
-    :return:
 
-    """
+
+
+
+
     return psutil.users()
-    #*** *SET' all data from psutill.users > database in order to geter info and be mpre efective?
 
-    #while true loop the logedin() function
-    # while True:
-#    loggedin()
-#    time.sleep(10)
+
+
+
+
+
 
 
 
