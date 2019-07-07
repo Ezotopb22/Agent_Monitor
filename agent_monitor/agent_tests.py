@@ -16,9 +16,9 @@ def diagnose():
     print(ops.loggedin())
     sys.stdout.close()
 diagnose()
-    #.close()    #eturn
 
-#while True:
-#    diag()
-#    time.sleep(10)
+
+while True:
+    diagnose()
+    time.sleep(10)
 
