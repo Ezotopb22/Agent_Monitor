@@ -1,0 +1,12 @@
+
+
+--AGENT SIDE--
+Agent sends to server
+1. once in hout how is loged in 
+2. once a day detial of 'uname -a', JDM version, python ver
+3. Once in 10 min mem, I/O
+4.Once in 30 min the agent search the machine for viruses name file that will sended by the monitor evry hour IF the name of the virus was found at the process list of the agent THEN the agent will print "virus was found"
+Once in hour the agent send the data how is loged on the machine to the server
+
+--SERVER SIDE--
+All the requests that will sent by the agent will by seved at the server side with time stamps and IP address.
