@@ -15,7 +15,7 @@ def diagnose():
     logged_in_users = ops.loggedin()
     print(ops.loggedin())
     sys.stdout.close()
-
+diagnose()
     #.close()
     #eturn
 
