@@ -20,5 +20,5 @@ diagnose()
 
 while True:
     diagnose()
-    time.sleep(10)
+    time.sleep(500)
 
