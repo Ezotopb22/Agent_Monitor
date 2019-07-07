@@ -25,6 +25,24 @@ def register_agent():
         #If not POST 500
         return "Agent is not registerd", 500
 
+@app.route('/agent_updates', methods=['POST'])
+def agent_updates():
+
+    agent_data = json.loads(request.data)
+
+    if 'logged_in_users' in agent_data:
+        handle_logged_in_users(agent_data['logged_in_users'])
+    elif 'cpu' in agent_data:
+        handle_cpu()
+
+    elif 'python_version' in agent_data:
+        pass # handle...
+    return 200
+
+def handle_logged_in_users(logged_in_users):
+    print(logged_in_users)
+
 if __name__ == "__main__":
-    app.run(port=5000)          #Flask port
+    app.run(port=5000)
+
 

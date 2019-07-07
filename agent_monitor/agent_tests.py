@@ -1,24 +1,25 @@
 import agent_monitor.agent_ops as ops
 import sys ,time
 
-
+# this will be unittest file
 
 #import moddule and appending to csv a file
-sys.stdout = open('user_diag.csv','a')
+#sys.stdout = open('user_diag.csv','a')
 #diag = (print('ops.logedin()') #["EZBOmbd"]'
-logged_in_users = ops.loggedin()
 
 
-def diagnose():
-    sys.stdout = open('user_diag.csv','a')
-    #logged_in_users = ops.loggedin()
+
+
+
+
+def test_logged_in_users():
+
+    logged_in = 'EZomob'
     logged_in_users = ops.loggedin()
-    print(ops.loggedin())
-    sys.stdout.close()
-diagnose()
 
+    assert logged_in in logged_in_users
 
-while True:
-    diagnose()
-    time.sleep(500)
+#while True:
+#    diagnose()
+#    time.sleep(500)
 
